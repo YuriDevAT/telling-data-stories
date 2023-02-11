@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pie Charts with D3.js</title>
+
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <div>
+    <h1 style="text-align:center; font-family:sans-serif">Selled Products by Company XY in 2020</h1>
+    <div style="display:flex; justify-content:space-around">
+      <div id="pie"></div>
+      <div id="pie1"></div>
+    </div>
+  </div>
+  
+  <script>
+    const width = 450;
+    const height = 450;
+    const margin = 40;
+
+    const radius = Math.min(width, height) / 2 - margin;
+
+    const svg = d3.select("#pie")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .append("g")
+      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    // Create dummy data
+    const data = {A: 51, B: 27, C:26, D: 5, E: 4, F: 3, G: 2, H: 2};
+
+    const color = d3.scaleOrdinal()
+      .domain(data)
+      .range(["#091D34",
+              "#133863",
+              "#1E5A9F",
+              "#317FD8",
+              "#6EA4E2",
+              "#B2CFF0",
+              "#D4E4F7",
+              "#EEF4FC"
+             ]);
+
+    const pie = d3.pie().value(function(d) {
+      return d.value;
+    });
+    
+    const data_ready = pie(d3.entries(data));
+    
+    const arcGenerator = d3.arc()
+      .innerRadius(0)
+      .outerRadius(radius)
+
+    svg
+      .selectAll('pie')
+      .data(data_ready)
+      .enter()
+      .append('path')
+      .attr('d', d3.arc()
+        .innerRadius(0)
+        .outerRadius(radius)
+      )
+      .attr('fill', function(d){
+        return(color(d.data.key))
+      });
+    
+    svg
+      .selectAll('pie')
+      .data(data_ready)
+      .enter()
+      .append('text')
+      .text(function(d){return "Product " + d.data.key})
+      .attr("transform", function(d) {
+        return "translate(" + arcGenerator.centroid(d) + ")";
+      })
+      .attr("fill", "white")
+      .style("text-anchor", "middle")
+      .style("font-size", 20)
+      .style("font-family", "sans-serif");
+  </script>
+  
+  <script>
+    const svg1 = d3.select("#pie1")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .append("g")
+      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    // Create dummy data
+    const data1 = {A: 51, B: 27, C: 22};
+
+    const color1 = d3.scaleOrdinal()
+      .domain(data1)
+      .range(["#091D34", "#133863", "#609CE1"]);
+
+    const pie1 = d3.pie().value(function(d) {
+      return d.value;
+    })
+    const data_ready1 = pie1(d3.entries(data1));
+
+    svg1
+      .selectAll('pie1')
+      .data(data_ready1)
+      .enter()
+      .append('path')
+      .attr('d', arcGenerator)
+      .attr('fill', function(d){
+        return(color(d.data.key))
+      })
+      .attr("stroke", "white")
+      .style("stroke-width", "2px");
+    
+    svg1
+      .selectAll('pie1')
+      .data(data_ready1)
+      .enter()
+      .append('text')
+      .text(function(d){
+      if(d.data.key == "C") {
+        return "others"
+      } else {
+        return "Product " + d.data.key
+        }
+      })
+      .attr("transform", function(d) {
+        return "translate(" + arcGenerator.centroid(d) + ")";
+      })
+      .attr("fill", "white")
+      .style("text-anchor", "middle")
+      .style("font-size", 20)
+      .style("font-family", "sans-serif");
+  </script>
+</head>
+<body>
+</body>
+</html>
