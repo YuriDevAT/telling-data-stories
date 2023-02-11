@@ -9,7 +9,11 @@ Tools and methods used:
 - ![R](https://www.r-project.org/)
 - ![library VennDiagram](https://cran.r-project.org/web/packages/VennDiagram/VennDiagram.pdf)
 
+<div align="center">
+  
 ![venn diagram showing the commonalities and differences of Usability and Accessibility which overlaps in Universal.](https://github.com/YuriDevAT/telling-data-stories/blob/main/R/venndiagram.png)
+  
+</div>
 
 ## Heatmap
 
