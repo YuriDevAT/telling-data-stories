@@ -1,6 +1,15 @@
 # Description
 This repository contains data charts for the lecture <b>Telling Data Stories</b> at University of Vienna.
 
+## Pie Charts
+
+These Pie Charts were created using D3.js to compare a bad with a quite good pie chart.
+
+Tools and methods used:
+- ![D3js]()
+
+![Pie Charts](https://github.com/YuriDevAT/telling-data-stories/blob/main/D3/piecharts.png)
+
 ## Venndiagram
 
 This venndiagram was created using R (with R Studio) and the VennDiagram library. It shows the ratio of commonalities (= Universal) and differences between Usabililty and Accessibility.
@@ -27,3 +36,14 @@ Tools and methods used:
 - ![calmap](https://pythonhosted.org/calmap/)
 
 ![Heatmap](https://github.com/YuriDevAT/telling-data-stories/blob/main/Python/heatmap.png)
+
+## Poster
+
+Tools and methods used:
+- ![Keynote]()
+- ![Jasp]()
+
+## Infographic
+
+Tools and methods used:
+- ![Canva]()
