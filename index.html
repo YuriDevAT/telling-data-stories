@@ -1,25 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: linear-gradient(to top left, #66ffcc 0%, #ff99cc 100%)">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
   <title>Julia Undeutsch: Telling Data Stories</title>
 </head>
-<body>
-  <h1>Telling Data Stories</h1>
-  <h2>by Julia Undeutsch</h2>
-  <p>Hi, I'm Julia. I'm a Frontend Developer and Accessibility Advocate. I'm currently a student at the University of Vienna of Digital Humanities. I am interested in spreading awareness of accessibility at all levels.</p>
-  <p>This website contains data charts and background information, created for the lecture Telling Data Stories.</p>
- <p>
-  Embedded youtube video!
- </p>
-  <p>
-  Embedded PDF of Infographic!
- </p>
-   <p>
-  Embedded PDF of Portfolio!
- </p>
+
+<body
+  style="margin: 50px auto; text-align: center; max-width:1000px; padding: 50px; font-family: 'Open Sans', sans-serif; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 15px; background-color: white; line-height: 1.6;">
+  <h1
+    style="background: linear-gradient(to top left, #66ffcc 0%, #ff99cc 100%); background-clip: text; -webkit-background-clip: text; color: transparent; font-size: 64px; font-weight: 900; -webkit-text-stroke: 1.5px #000;">
+    Telling Data Stories
+  </h1>
+  <h2>a journey on how to become a data viz pro</h2>
+  <div style="max-width: 800px; margin: 0 auto">
+    <p>Hi, I'm Julia. I'm a frontend developer and accessibility advocate. I'm currently a student at
+      the University of Vienna of Digital Humanities. I am interested in spreading awareness of accessibility at all
+      levels.</p>
+    <p>This website contains data charts and background information, created for the lecture Telling Data Stories.</p>
+    <p>
+      Embedded youtube video!
+    </p>
+  </div>
   <a href="https://github.com/YuriDevAT/telling-data-stories">Link to Github repository!</a>
+  <section style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <div>
+      <h2>
+        Infographic
+      </h2>
+      <p>
+        showing my progress throughout the lecture
+      </p>
+      <img src="/images/infographic.png" width="300" height="800"
+        alt="Infographic showing my progress throughout the lecture." id="info" />
+      <p aria-describedby="info"></p>
+    </div>
+    <div>
+      <h2>
+        Portfolio - A Recap
+      </h2>
+      <p>
+        Check out the <a
+          href="https://github.com/YuriDevAT/telling-data-stories/blob/main/portfolio/Portfolio.pdf">portfolio to the
+          lecture as a PDF</a> <br /> or <a href="portfolio/portfolio.html">read the portfolio it
+          online</a>.
+      </p>
+      <object data="https://github.com/YuriDevAT/telling-data-stories/blob/main/portfolio/portfolio.pdf"
+        title="Portfolio" width="800" height="500">
+      </object>
+    </div>
+  </section>
 </body>
+
 </html>
