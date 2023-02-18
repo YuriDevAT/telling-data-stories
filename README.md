@@ -1,18 +1,20 @@
 # Description
 This repository contains data charts for the lecture <b>Telling Data Stories</b> at University of Vienna.
 
+Check out the website about the project: https://telling-data-stories.netlify.app/
+
 ## Pie Charts
 
-These Pie Charts were created using D3.js to compare a bad with a quite good pie chart.
+These Pie Charts were created using D3.js to compare a bad with a quite good pie chart and talk about best practices.
 
 Tools and methods used:
-- ![D3js]()
+- ![D3js](https://d3js.org/)
 
 ![Pie Charts](https://github.com/YuriDevAT/telling-data-stories/blob/main/D3/piecharts.png)
 
 ## Venndiagram
 
-This venndiagram was created using R (with R Studio) and the VennDiagram library. It shows the ratio of commonalities (= Universal) and differences between Usabililty and Accessibility.
+This venn diagram was created using R (with R Studio) and the VennDiagram library. It shows the ratio of commonalities (= Universal) and differences between <b>Usabililty</b> and <b>Accessibility</b>.
 
 Tools and methods used:
 - ![R](https://www.r-project.org/)
@@ -37,13 +39,22 @@ Tools and methods used:
 
 ![Heatmap](https://github.com/YuriDevAT/telling-data-stories/blob/main/Python/heatmap.png)
 
-## Poster
-
-Tools and methods used:
-- ![Keynote]()
-- ![Jasp]()
-
 ## Infographic
+
+The progress infographic was created using Canva. It shows the progress of the lecture and the different steps taken to create the different charts.
 
 Tools and methods used:
 - ![Canva]()
+
+![Infographic](https://github.com/YuriDevAT/telling-data-stories/blob/main/images/infographic.png)
+
+## Poster
+
+The poster was created using Keynote and Jasp. It shows the research data about web accessibility awareness created in another lecture.
+
+Tools and methods used:
+- ![Keynote](https://www.apple.com/keynote/)
+- ![Jasp](https://jasp-stats.org/)
+- ![D3js](https://d3js.org/)
+
+![Poster](https://github.com/YuriDevAT/telling-data-stories/blob/main/images/poster.png)
