@@ -71,4 +71,4 @@ The poster was created using Keynote and Jasp. It shows the research data about 
 
 ___
 
-Thanks for your interest in this repository. If you have any questions, feel free to contact me.
+Thanks for your interest in this repository. I really appreciate it.
