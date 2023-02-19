@@ -1,3 +1,8 @@
+ * {
+   box-sizing: border-box;
+   clear: both;
+ }
+
  html {
    background: linear-gradient(to top left, #66ffcc 0%, #ff99cc 100%);
    box-sizing: border-box;
@@ -23,12 +28,18 @@
    font-size: 64px;
    font-weight: 900;
    font-family: 'Bitter', serif;
+   margin-bottom: 0;
    -webkit-text-stroke: 1.5px #000;
  }
 
  h1+p {
    font-size: 24px;
    font-weight: 700;
+   margin-top: 10px;
+ }
+
+ section {
+   margin: 30px 0;
  }
 
  section h2 {
@@ -41,5 +52,58 @@
 
  .intro {
    max-width: 800px;
-   margin: 0 auto;
+   margin: 20px auto;
+ }
+
+ .buttons {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 20px auto;
+   justify-content: space-around;
+ }
+
+ .buttons a {
+   margin: 20px 0;
+ }
+
+ .portfolio .buttons {
+   justify-content: space-evenly;
+   margin-bottom: 40px;
+ }
+
+ a {
+   background-color: #b9ebdb;
+   text-decoration: none;
+   border: 2px solid #000;
+   border-radius: 15px;
+   padding: 15px 20px;
+   color: #000;
+ }
+
+ details {
+   margin-bottom: 25px;
+ }
+
+ @media screen and (max-width: 840px) {
+
+   iframe,
+   object,
+   img {
+     width: 350px;
+     height: auto;
+   }
+
+   body {
+     padding: 10px;
+   }
+ }
+
+ @media screen and (max-width: 360px) {
+
+   iframe,
+   object,
+   img {
+     width: 300px;
+     height: auto;
+   }
  }

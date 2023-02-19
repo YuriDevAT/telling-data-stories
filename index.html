@@ -5,53 +5,82 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;900&family=Open+Sans:wght@400;800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <title>Julia Undeutsch: Telling Data Stories</title>
 </head>
 
 <body>
-  <h1>
-    Telling Data Stories
-  </h1>
+  <h1>Telling Data Stories</h1>
   <p>a journey on how to become a data viz pro</p>
-  <div class="intro">
+
+  <section class="intro">
     <p>Hi, I'm Julia. I'm a frontend developer and accessibility advocate. I'm currently a student at
       the University of Vienna of Digital Humanities. I am interested in spreading awareness of accessibility at all
       levels.</p>
     <p>This website contains data charts and background information, created for the lecture Telling Data Stories.</p>
-    <iframe width="560" height="315" src="https://youtu.be/qe_4gGoP3ZA" frameborder="0" allowfullscreen
-      title="Presentation Telling Data Stories"></iframe>
-  </div>
-  <div class="buttons">
+    <object data="presentation.mp4" title="Presentation of my experience with the lecture Telling Data Stories"
+      width="600" height="400">
+    </object>
+  </section>
+  <section class="buttons">
     <a href="https://github.com/YuriDevAT/telling-data-stories">Link to Github repository</a>
     <a href="#portfolio">Check out the portfolio</a>
-  </div>
+    <a href="https://youtu.be/qe_4gGoP3ZA">Watch the video on YouTube</a>
+  </section>
   <section>
     <h2>
       Infographic
     </h2>
-    <p>
-      showing my progress throughout the lecture
-    </p>
-    <img src="/images/infographic.png" width="500" height="1250"
-      alt="Infographic showing my progress throughout the lecture." id="info" />
-    <p aria-describedby="info"></p>
+    <details id="infographic">
+      <summary>Full text of the infographic</summary>
+      <p style="font-size: 20px;">Telling Data Stories, A journey on how to become a Data Viz Pro</p>
+      <p><b>What is data visualisation?</b></p>Data visualization is the process of using visual elements such as
+      charts, graphs, or maps to represent data. It translates complex, or numerical data into a visual representation
+      that is easier to process.
+      <p><b>Putting data on maps</b></p> Use maps to show, e.g., the frequency of an earthquake in a certain area, the
+      election results in a certain country or simply where you have traveled. R can be a good choice for visualization.
+      <p><b>Basic descriptive graphs</b></p> Start slowly with simple graphs like pie charts, bar charts and such. Learn
+      how to work with data and tools like R and Python (better) to visualize it.Try to make the graphs accessible to
+      everyone.
+      <p><b>Special descriptive graphs</b></p> Now that you're more comfortable with using data and tools it's time to
+      create more complex graphs like heatmaps or dendrograms. Make a conscious decision about which graphs visualize
+      your data best and which tools to use.
+      <p><b>Telling more with info viz</b></p> But there is so much more. Present your created graphs with the help of
+      e.g. an infographic, which is often used for visual storytelling, and give the reader more background information
+      about your project.
+      <p><b>Best practices</b></p> Take one last look at your graphs. Have you applied best practices? Can everyone
+      understand your graph and is it accessible to all? If yes, then you are good to go.
+      You did it! Keep up the good work.
+      <p><b>Don't know where to start?</b></p> 5 Tips to tell your next great data story
+      </p>
+      <ul>
+        <li>get aware of what you want to show with your data</li>
+        <li>find the type of chart that best represents your data</li>
+        <li>find the best tool to create the chart</li>
+        <li>get familiar with the tool in order to use it in the best way</li>
+        <li>don't forget to make your chart and the content accessible to everyone</li>
+      </ul>
+      <p><b>Find out more</b></p> For more information check out my Github Repository and Youtube Video.
+    </details>
+    <img src="/assets/infographic.png" width="700" height="1750"
+      alt="Infographic showing my progress throughout the lecture." id="info" aria-describedby="infographic" />
   </section>
   <section id="portfolio">
     <h2>
       Portfolio - A Recap
     </h2>
-    <div>
+    <div class="buttons">
       <a href="https://github.com/YuriDevAT/telling-data-stories/blob/main/portfolio/portfolio.pdf">portfolio to the
         lecture as a PDF</a>
-      <a href="portfolio/portfolio.html">read the portfolio it
+      <a href="portfolio/portfolio.html">read the portfolio
         online</a>
     </div>
-    <object data="portfolio/Portfolio.pdf" type="application/pdf" title="Portfolio" width="500" height="800">
+    <object data="portfolio/portfolio.pdf" type="application/pdf" title="Portfolio to the lecture Telling Data Stories"
+      width="800" height="1000">
     </object>
   </section>
 </body>

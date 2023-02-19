@@ -56,7 +56,7 @@ The progress infographic was created using Canva. It shows the progress of the l
 <b>Tools and methods used:</b>
 - ![Canva]()
 
-![Infographic](https://github.com/YuriDevAT/telling-data-stories/blob/main/images/infographic.png)
+![Infographic](https://github.com/YuriDevAT/telling-data-stories/blob/main/assets/infographic.png)
 
 ## 6. Poster
 
@@ -67,7 +67,7 @@ The poster was created using Keynote and Jasp. It shows the research data about 
 - ![Jasp](https://jasp-stats.org/)
 - ![D3js](https://d3js.org/)
 
-![Poster](https://github.com/YuriDevAT/telling-data-stories/blob/main/images/poster.png)
+![Poster](https://github.com/YuriDevAT/telling-data-stories/blob/main/assets/poster.png)
 
 ___
 
