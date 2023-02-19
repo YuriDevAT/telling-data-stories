@@ -84,6 +84,10 @@
    margin-bottom: 25px;
  }
 
+ details>*+* {
+   text-align: left;
+ }
+
  @media screen and (max-width: 840px) {
 
    iframe,
